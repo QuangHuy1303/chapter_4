@@ -31,3 +31,10 @@
 
 en:
   hello: "Hello world"
+  bar: "Find me in app/views/foo/bar.html.erb"
+  baz: "Find me in app/views/foo/baz.html.erb"
+  foobaz: "Foo#baz"
+  foobar: "Foo#bar"
+  help: "Help"
+  title: "Ruby on Rails Tutorial Sample App"
+  sampleapp: "Sample App"
