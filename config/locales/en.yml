@@ -18,3 +18,14 @@ en:
   by: "by"
   home: "home"
   login: "login"
+  name: "Name: "
+  email: "Email: "
+  theform: "the form contains"
+  notewel: "Welcome to the Sample App!"
+  shared:
+    _error_messages:
+      error: "error"
+  users:
+    new:
+      signupnew: "Sign Up"
+      Confirmation: "Confirmation"
