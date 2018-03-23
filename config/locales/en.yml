@@ -22,10 +22,27 @@ en:
   email: "Email: "
   theform: "the form contains"
   notewel: "Welcome to the Sample App!"
+  sessions:
+    new:
+      newuser: "new user ?"
+      nsignup: "Sign up now!"
+      nlogin: "Log in"
   shared:
-    _error_messages:
+    errormessages:
       error: "error"
   users:
     new:
       signupnew: "Sign Up"
       Confirmation: "Confirmation"
+      create: "Create my account"
+  layouts:
+    header:
+      hsampleapp: "sample app"
+      hprofile: "Profile"
+      hsettings: "Settings"
+      huser: "Users"
+      hlogout: "Log out"
+      hlogin: "Log in"
+      account: "Account"
+  sessions_controller:
+      invalid: "Invalid email/password combination"
