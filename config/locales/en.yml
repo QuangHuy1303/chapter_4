@@ -26,6 +26,7 @@ en:
     new:
       newuser: "new user ?"
       nsignup: "Sign up now!"
+      remember: "Rememer me on this computer"
       nlogin: "Log in"
   shared:
     errormessages:
