@@ -21,21 +21,38 @@ en:
   name: "Name: "
   email: "Email: "
   theform: "the form contains"
+  error: "error"
   notewel: "Welcome to the Sample App!"
+  userdete: "User deleted"
+  invalid: "Invalid email/password combination"
+  pleadelogin: "Pleade log in."
+  fail: "Fail"
   sessions:
     new:
       newuser: "new user ?"
       nsignup: "Sign up now!"
       remember: "Rememer me on this computer"
       nlogin: "Log in"
-  shared:
-    errormessages:
-      error: "error"
   users:
     new:
       signupnew: "Sign Up"
       Confirmation: "Confirmation"
       create: "Create my account"
+      savechange: "Save Change"
+    edit:
+      edituser: "Edit user"
+      updatepf: "Update your profile"
+      confir: "Confirmation"
+      savechange: "Save changes"
+      change: "change"
+    index:
+      allusers: "All users"
+    user:
+      yousure: "You Sure?"
+      delete: "delete"
+    update:
+      profileupdated: "Profile updated"
+      failcmnr: "Fail Cmnr"
   layouts:
     header:
       hsampleapp: "sample app"
@@ -45,5 +62,4 @@ en:
       hlogout: "Log out"
       hlogin: "Log in"
       account: "Account"
-  sessions_controller:
-      invalid: "Invalid email/password combination"
+

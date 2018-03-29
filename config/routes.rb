@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  concern :paginatable do
+    get "(page/:page)", action: :index, on: :collection, as: ""
+  end
   root "static_pages#home"
   get "sessions/new"
   get "users/new"
@@ -9,9 +12,10 @@ Rails.application.routes.draw do
   get "/contact", to: "static_pages#contact"
   get "/about", to: "static_pages#about"
   get "/signup", to: "users#new"
+  get "/index", to: "users#index"
   post "/signup",  to: "users#create"
   get "/login",   to: "sessions#new"
   post "/login",   to: "sessions#create"
   delete "/logout",  to: "sessions#destroy"
-  resources :users
+  resources :users, concerns: :paginatable
 end

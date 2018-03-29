@@ -17,7 +17,11 @@ gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
 gem "config"
 gem "kaminari"
-
+gem "faker", "1.7.3"
+gem "will_paginate", "3.1.6"
+gem "bootstrap-will_paginate", "1.0.0"
+gem "ransack"
+gem "bootstrap-kaminari-views"
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   gem "capybara", "~> 2.13"
