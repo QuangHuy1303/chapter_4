@@ -1,6 +1,6 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'color';
 body{
   padding-top: 60px;
 }
@@ -12,15 +12,30 @@ section{
 textarea{
   resize: vetical;
 }
-$light-gray: #777;
-$gray-medium-light: #eaeaea;
+
 @mixin box_sizing {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+.deletecolor{
+  color: $red;
+}
+.will_paginate{
+  text-align:center;
+  clear:both;
+}
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-medium-light;
+  }
+}
 .checkbox {
-  margin: 10px;
+  margin: 10px 10px;
   span {
     margin-left: 20px;
     font-weight: normal;
@@ -37,28 +52,6 @@ $gray-medium-light: #eaeaea;
     margin: 0 0 30px 0;
   }
 }
-#error_explanation {
-  color: red;
-  ul {
-    color: red;
-    margin: 0 0 30px 0;
-  }
-}
-#error_explanation {
-  color: red;
-  ul {
-    color: red;
-    margin: 0 0 30px 0;
-  }
-}
-#error_explanation {
-  color: red;
-  ul {
-    color: red;
-    margin: 0 0 30px 0;
-  }
-}
-
 .field_with_errors {
   @extend .has-error;
   .form-control {
@@ -91,7 +84,7 @@ aside {
   }
 }
 input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
+  border: 1px solid ;
   width: 100%;
   margin-bottom: 15px;
   @include box_sizing;
@@ -148,17 +141,17 @@ p {
   line-height: 1.7em;
 }
 img{
-  display: none;
+  display: block;
 }
 footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid $gray-medium-light;
-  color: light-gray;
+  color: $light-gray;
   a {
-    color: #555;
+    color: $blue;
     &:hover {
-      color: #222;
+      color: $black;
     }
   }
   small {
@@ -177,13 +170,13 @@ footer {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: $white;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   &:hover {
-    color: #fff;
+    color: $white;
     text-decoration: none;
   }
 }
