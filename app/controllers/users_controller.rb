@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   before_action :verify_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
   before_action :find_user, except: %i(index new create)
+  before_action :follow, only: %i(following followers)
 
   def index
     @users = User.order_by_asc.paginate(page: params[:page], per_page:
@@ -29,7 +30,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def edit ;end
+  def edit; end
 
   def update
 
@@ -51,6 +52,14 @@ class UsersController < ApplicationController
       flash[:fails]= t "fail"
       redirect_to users_url
     end
+  end
+
+  def following
+    @title = t "Following"
+  end
+
+  def followers
+    @title = t "Followers"
   end
 
   private
@@ -75,5 +84,11 @@ class UsersController < ApplicationController
       flash[:error] = t "No user"
       redirect_to users_url
     end
+  end
+
+  def follow
+    @user  = User.find_by id: params[:id]
+    @users = @user.following.paginate page: params[:page]
+    render :show_follow
   end
 end
