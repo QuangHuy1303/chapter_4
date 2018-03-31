@@ -41,6 +41,9 @@ en:
   reset_email_notfound: "Email address not found"
   reset_pass_expired: "Password reset has expired."
   password_reset: "Password reset"
+  micropost_create: "Micropost created!"
+  micropost_delete: "Micropost deleted"
+  less_five_mb: "should be less than 5MB"
   sessions:
     new:
       newuser: "new user ?"
@@ -69,6 +72,8 @@ en:
     update:
       profileupdated: "Profile updated"
       failcmnr: "Fail Cmnr"
+    show:
+      micropost: "Microposts"
   layouts:
     header:
       hsampleapp: "sample app"
@@ -102,3 +107,23 @@ your password will stay as it is."
       reset_password: "Reset password"
       confirmation: "Confirmation"
       update_password: "Update password"
+  microposts:
+    micropost:
+      posted: "Posted"
+      ago: "ago."
+  shared:
+    user_info:
+      view_profile: "view my profile"
+      micropost: "micropost"
+    micropost_form:
+      compose_new: "Compose new micropost..."
+      post: "Post"
+  static_pages:
+    home:
+      this_is_home: "This is the home page for the"
+      ruby_on_rails: "Ruby on Rails Tutorial"
+      sample_application: "sample application."
+      sign_up_now: "Sign up now!"
+  microposts:
+    micropost:
+      yousure: "You sure?"

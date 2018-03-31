@@ -7,3 +7,4 @@ avatarsize: 50
 page: 5
 host: "localhost:3000"
 numberpage: 10
+vlmicropost: 140

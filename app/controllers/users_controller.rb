@@ -9,7 +9,9 @@ class UsersController < ApplicationController
       Settings.numberpage)
   end
 
-  def show ;end
+  def show
+    @microposts = @user.microposts.paginate(page: params[:page])
+  end
 
   def new
       @user = User.new
@@ -55,14 +57,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit :name, :email, :password,
       :password_confirmation
-  end
-
-  def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = t "pleadelogin"
-      redirect_to login_url
-    end
   end
 
   def verify_user

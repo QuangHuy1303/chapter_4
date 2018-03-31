@@ -23,6 +23,9 @@ gem "bootstrap-will_paginate", "1.0.0"
 gem "ransack"
 gem "bootstrap-kaminari-views"
 gem "figaro", "~> 1.1", ">= 1.1.1"
+gem "carrierwave", "1.2.2"
+gem "mini_magick", "4.7.0"
+
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   gem "capybara", "~> 2.13"

@@ -10,7 +10,7 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX},
     uniqueness: {case_sensitive: false}
   validates :password, presence: true, length: {minimum: Settings.minpass},
-    allow_nil: true
+    allow_nil: false
   has_secure_password
 
   scope :order_by_asc, -> {order created_at: :asc}
