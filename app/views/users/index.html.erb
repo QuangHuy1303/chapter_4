@@ -1,6 +1,6 @@
 <% provide :title, t(".allusers") %>
 <h1><%= t ".allusers" %></h1>
 <ul class="users">
-  <%= render @users %>
+  <%= render @users, as: :user %>
 </ul>
 <div class="will_paginate"><%= paginate @users, theme: "twitter-bootstrap-3" %></div>

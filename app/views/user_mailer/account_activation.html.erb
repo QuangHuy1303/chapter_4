@@ -2,7 +2,7 @@
 
 <p>Hi <%= @user.name %>,</p>
 
-<p><%= t ".welcome" %></p>
+<p><%= t "user_mailer.account_activation.welcome" %></p>
 
-<%= link_to t(".activate"), edit_account_activation_url(@user.activation_token,
+<%= link_to t("user_mailer.account_activation.activate"), edit_account_activation_url(@user.activation_token,
   email: @user.email) %>
