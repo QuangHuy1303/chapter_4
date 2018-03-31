@@ -35,12 +35,20 @@ en:
   checkmail: "Check your email for the activation link."
   hi: "Hi"
   example: "to@example.org"
+  reset_check_email: "Email sent with password reset instructions"
+  reset_cant_be_empty: "Can't be empty"
+  reset_has_been: "Password has been reset."
+  reset_email_notfound: "Email address not found"
+  reset_pass_expired: "Password reset has expired."
+  password_reset: "Password reset"
   sessions:
     new:
       newuser: "new user ?"
       nsignup: "Sign up now!"
       remember: "Rememer me on this computer"
       nlogin: "Log in"
+      forgot_password: "forgot password"
+      remember_me: "Remember me on this computer"
   users:
     new:
       signupnew: "Sign Up"
@@ -75,3 +83,22 @@ en:
       welcome: "Welcome to the Sample App! Click on the link below to activate
         your account:"
       activate: "Activate"
+    password_reset:
+      password_reset: "Password reset"
+      reset_password: "Reset password"
+      this_link: "This link will expire in two hours."
+      if_not: "If you did not request your password to be reset, please ignore
+        this email and your password will stay as it is."
+      to_reset_pass: "To reset your password click the link below:"
+      this_link: "This link will expire in two hours."
+      if_not_request: "If you did not request your password to be reset,
+          please ignore this email and
+your password will stay as it is."
+  password_resets:
+    new:
+      forgot_password: "Forgot password"
+      submit: "Submit"
+    edit:
+      reset_password: "Reset password"
+      confirmation: "Confirmation"
+      update_password: "Update password"

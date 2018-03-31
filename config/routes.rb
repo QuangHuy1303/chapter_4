@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get "password_resets/new"
+
+  get "password_resets/edit"
+
   concern :paginatable do
     get "(page/:page)", action: :index, on: :collection, as: ""
   end
@@ -18,5 +22,6 @@ Rails.application.routes.draw do
   post "/login",   to: "sessions#create"
   delete "/logout",  to: "sessions#destroy"
   resources :users, concerns: :paginatable
-  resources :account_activations, only: [:edit]
+  resources :account_activations, only: %i(edit)
+  resources :password_resets, except: %i(show index destroy)
 end

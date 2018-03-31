@@ -1,16 +1,15 @@
 class UsersController < ApplicationController
-
   before_action :logged_in_user, except: %i(new create show)
   before_action :verify_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
   before_action :find_user, except: %i(index new create)
 
   def index
-    @users = User.paginate(page: params[:page], :per_page => Settings.numberpage).order "created_at asc"
+    @users = User.order_by_asc.paginate(page: params[:page], per_page:
+      Settings.numberpage)
   end
 
-  def show
-  end
+  def show ;end
 
   def new
       @user = User.new
@@ -28,8 +27,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def edit
-  end
+  def edit ;end
 
   def update
 
@@ -54,7 +52,6 @@ class UsersController < ApplicationController
   end
 
   private
-
   def user_params
     params.require(:user).permit :name, :email, :password,
       :password_confirmation
