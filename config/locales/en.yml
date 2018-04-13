@@ -44,6 +44,8 @@ en:
   micropost_create: "Micropost created!"
   micropost_delete: "Micropost deleted"
   less_five_mb: "should be less than 5MB"
+  Following: "Following"
+  Followers: "Followers"
   sessions:
     new:
       newuser: "new user ?"
@@ -74,6 +76,13 @@ en:
       failcmnr: "Fail Cmnr"
     show:
       micropost: "Microposts"
+    follow:
+      Follow: "Follow"
+    unfollow:
+      Unfollow: "Unfollow"
+    show_follow:
+      view_profile: "view my profile"
+      micropost: "Microposts:"
   layouts:
     header:
       hsampleapp: "sample app"
@@ -118,6 +127,9 @@ your password will stay as it is."
     micropost_form:
       compose_new: "Compose new micropost..."
       post: "Post"
+    stats:
+      following: "following"
+      follower: "follower"
   static_pages:
     home:
       this_is_home: "This is the home page for the"
@@ -127,3 +139,4 @@ your password will stay as it is."
   microposts:
     micropost:
       yousure: "You sure?"
+
